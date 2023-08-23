@@ -30,7 +30,7 @@ class SharedOutputPanelListener(sublime_plugin.EventListener):
 
         ## Hardcoded to -10 lines from the end, just completely randrom number.
         ## TODO: Here's some complex scrolling logic based on the content (## Answer) required.
-        point = output_panel.text_point(num_lines - 10, 0)
+        point = output_panel.text_point(num_lines + 1, 0)
 
         output_panel.show_at_center(point)
 
